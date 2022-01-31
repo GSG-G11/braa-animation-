@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .continer{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid blue;
+            transition: all 1s ease-in-out;
+        }
+
+        button:hover{
+            width:200px;
+            background-color: blue;
+        }
+
+        .continer2{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s ease-in-out;
+        }
+
+        h1:hover{
+            border-radius: 0;
+            transform: translateY(100px) rotate(45deg) scale(1.5)
+        }
+
+        .continer3{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image{
+            animation: anime 2s ease-in-out infinite;
+        }
+
+        @keyframes anime {
+            0% {
+                opacity: 0;
+                transform: translate(450px, 130px);
+                }
+
+            25% {
+                opacity: 0.7;
+                transform: scale(1.5) translate(-300px, 0px);
+                }
+
+            50% {
+            opacity: 1;
+            transform: translate(0, 0);
+            }
+
+            100% {
+            transform: scale(1);
+            border-radius: 50%;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    <!-- task 1 -->
+    <div class="continer">
+        <button> Hover me </button>
+    </div>
+
+    <!-- task 2 -->
+    <div class="continer2">
+        <h1>Hover me</h1>
+    </div>
+
+    <!-- task 3 -->
+    <div class="continer3">
+        <img class="image" src="hach.jfif">
+
+    </div>
+</div>
+</body>
+</html>
